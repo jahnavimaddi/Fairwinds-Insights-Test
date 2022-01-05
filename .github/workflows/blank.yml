@@ -1,0 +1,14 @@
+name: Example
+
+on: push
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    
+    steps:
+     - uses: actions/checkout@v2
+     - name: Test
+       run: |
+        cat policy.rego 
+        pwd
