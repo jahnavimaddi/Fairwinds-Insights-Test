@@ -9,6 +9,4 @@ jobs:
      - name: checkoutcode 
        uses: actions/checkout@v2
      - name: Test
-       run: |
-        cat policy.rego 
-        pwd
+       run: cat policy.rego
